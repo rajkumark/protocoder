@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Protocoder : " />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Protocoder</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/victordiaz/protocoder">View on GitHub</a>
+
+          <h1 id="project_title">Protocoder</h1>
+          <h2 id="project_tagline"></h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/victordiaz/protocoder/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/victordiaz/protocoder/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="protocoder" class="anchor" href="#protocoder"><span class="octicon octicon-link"></span></a>Protocoder</h1>
+
+<p>Protocoder is a coding environment + framework in Javascript for quick prototyping on Android devices having some enfansis on rapid hardware hacking. </p>
+
+<p>It all started during the <a href="http://www.makewithmoto.com">http://www.makewithmoto.com</a> tour. A 5 month cross country roadtrip across the US with a fearless crew from Motorola ATAP on a velcro-covered van and a VW bus full of 3d printers, hackable phones, arduinos, ioios, electronics components. 
+During the roadtrip we hacked together with university students and hackerspaces fellows and we realized we needed a better tool for prototyping, which we decided to start coding during the trip. Protocoder has been developed inside cars, hotel lobbys, cafes, restaurants, parks, here and there.</p>
+
+<p>Install the app in your Android device and access the web IDE from your computer. 
+Code in javascript using the protocoder framework. No needs to write dozends of lines to access sensors or write an UI, simple to use, fast to code.</p>
+
+<pre><code>//how to get sensor data
+sensors.startAccelerometer(function(x, y, z)) { 
+    console.log(x + " " + " " + y + " " + z); 
+}
+
+//send and sms
+android.sendSMS(number, "text");
+
+//play a video
+ui.addVideoView("fileName", 0, 0, 500, 200);
+</code></pre>
+
+<p>It uses a webserver and a websockets server inside the project to do some of the magic and has support of most android hardware functionality, networking using OSC and websockets and audio synthesis and processing using Pure Data. </p>
+
+<h2>
+<a name="androidapp-" class="anchor" href="#androidapp-"><span class="octicon octicon-link"></span></a>AndroidApp </h2>
+
+<p>Contains Protocoder android app, the framework in the JInterface folder and the web IDE inside the asset folder</p>
+
+<h2>
+<a name="desktopapp" class="anchor" href="#desktopapp"><span class="octicon octicon-link"></span></a>DesktopApp</h2>
+
+<p>is the app companion for USB support. It is based on node-webkit and basically runs a set of adb commands to forward the connections to USB. At the moment only it only has Mac OS X support. Other platforms are welcome!</p>
+
+<h2>
+<a name="how-to-compile-" class="anchor" href="#how-to-compile-"><span class="octicon octicon-link"></span></a>How to compile </h2>
+
+<p>Clone the project, import it in eclipse, make sure the API version you are using to compile is 18 or greater. Eclipse tends to change it when importing projects. 
+Press compile et voila.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Protocoder maintained by <a href="https://github.com/victordiaz">victordiaz</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
